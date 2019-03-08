@@ -4,24 +4,36 @@
   <head>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Thermostat</title>
     <script src="src/interface.js"></script>
     <script src="src/thermostat.js"></script>
     <h1 style="font-size: 50px; color: orange"> Thermostat </h1>
   </head>
   <body style="background: url(https://themerkle.com/wp-content/uploads/2017/03/hot-vs-cold.jpg); background-repeat:no-repeat; background-position: center; background-size: 1600px">
-    <div id='temperature' style="font-size: 50px; color: cyan"></div>
-    <div>
+    <div id='temperature' style="font-size: 50px; color: cyan; width: 120px; height: 60px; background: black"></div>
     <button id="temperature-up">+</button><br>
     <button id="temperature-down">-</button><br>
     <br>
     <button id="temperature-reset">reset</button><br>
     <br>
     <h2 style="color: cyan">power saving mode is:</h2>
-    <div id="power-saving-status" style="color: cyan; font-size:35px"></div><br>
+    <div id="power-saving-status" style="color: cyan; font-size:35px; width: 120px; height: 60px; background: black"></div>
     <br>
     <button id="powersave-on">PSM on</button><br>
     <button id="powersave-off">PSM off</button><br>
-    </div>
+    <br>
+    <section>
+  <h1 style="color: lime; width: 150px; height: 60px; background: black">Current temperature: <span id="current-temperature">20</span></h1>
+  <br>
+  <select id="current-city">
+    <option value="london">London</option>
+    <option value="new york">New York</option>
+    <option value="paris">Paris</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="stockholm">Stockholm</option>
+    <option value="moscow">Moscow</option>
+  </select>
+</section>
   </body>
 </html>
