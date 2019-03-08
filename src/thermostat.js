@@ -17,6 +17,7 @@ thermoStat.prototype.increase = function() {
   {return 'Limbo bar at maximum!'}
   else
   {this.temp ++};
+  console.log(this.temp)
 };
 
 thermoStat.prototype.decrease = function() {
